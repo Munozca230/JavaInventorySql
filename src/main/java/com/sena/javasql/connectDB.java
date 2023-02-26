@@ -47,7 +47,9 @@ public class connectDB {
 
                 // Obtener el stage (ventana) actual y establecer la nueva escena
                 Stage stage = (Stage) btnConnectDB.getScene().getWindow();
+                stage.setResizable(false);
                 stage.setScene(scene);
+
             } catch (IOException e) {
                 e.printStackTrace();
             }

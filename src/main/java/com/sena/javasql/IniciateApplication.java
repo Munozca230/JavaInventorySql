@@ -13,6 +13,7 @@ public class IniciateApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(IniciateApplication.class.getResource("connect-db.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("DB");
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }

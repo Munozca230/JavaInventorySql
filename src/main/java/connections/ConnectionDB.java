@@ -23,4 +23,15 @@ public class ConnectionDB {
         return connection;
     }
 
+    public static void cerrarConexion(Connection connection) {
+        if (connection != null) {
+            try {
+                connection.close();
+                System.out.println("Conexión cerrada exitosamente");
+            } catch (SQLException e) {
+                System.out.println("Error al cerrar la conexión: " + e.getMessage());
+            }
+        }
+    }
+
 }
