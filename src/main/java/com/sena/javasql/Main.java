@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         ConnectionDB.getConexion();
 
+        /**
         try {
             // Obtener conexión a la base de datos
             Connection conn = ConnectionDB.getConexion();
@@ -37,6 +38,9 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
         }
+         */
     }
+
+
 
 }

@@ -28,7 +28,7 @@ public class connectDB {
         boolean connected = false;
 
         try {
-            conn = connectionDB.getConexion();
+            conn = ConnectionDB.getConexion();
             statusLabel.setText("Conexión exitosa.");
             connected = true;
         } catch (Exception e) {
